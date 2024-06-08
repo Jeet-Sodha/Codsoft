@@ -1,0 +1,253 @@
+<html>
+<head>
+    <style>
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FFF9D0;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+}
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color:#A0DEFF;
+}
+nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: #393E46;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li {
+    padding: 8px 15px;
+}
+nav ul li a {
+    font-size: 20px;
+    color: #393E46;
+}
+nav ul li:hover {
+    background-color: #5AB2FF;
+}
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+.line .side1 {
+    padding-right: 50px;
+}
+.side1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color:black;
+}
+.side1 button {
+    width: 200px;
+    font-size: 17px;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.about .boxes {
+    display: flex;
+    justify-content: space-between;
+}
+.about .boxes .box {
+    margin: 10px 20px;
+    max-width: calc(100% / 3 - 50px);
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+.contact .content {
+    padding: 30px 0;
+}
+.content .title {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.title {
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+.contactMenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+.input2 {
+    margin-top: 10px;
+}
+.label1 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.contactMenu .input1 input {
+    border-radius: 13px;
+    padding: 6px;
+}
+.input2 input {
+    border-color: rgb(252, 244, 244);
+    width: 500px;
+}
+.button {
+    margin-top: 12px;
+    margin-left: 5px;
+}
+.button button:hover {
+    background-color: #5ab2ff;
+}
+button {
+    width: 160px;
+    background-color: #A0DEFF;
+    height: 35px;
+    border-radius: 12px;
+    border-color: transparent;
+}
+button:hover {
+    background-color:#5AB2FF;
+}
+.rightside1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+.title1 {
+    font-size: 18px;
+    margin: 10px;
+    font-weight: bolder;
+}
+.content1 {
+    padding-left: 20px;
+    margin-top: 2px;
+    color: grey;
+}
+footer {
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+}
+    </style>
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav>
+        <div class="heading">Amazon Landing Page</div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Sign Up</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Amazon</h1>
+            <button>
+                <a href="#about">About us</a>
+            </button>
+        </div>
+        <div class="side2">
+            <img src="https://www.performics.com/in/wp-content/uploads/sites/6/2023/06/amazon-3.jpg" width="500">
+        </div>
+    </div>
+    <section class="about" id="about">
+        <div class="content">
+            <div class="title">
+                <span>Services</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                        <h1>Amazon Store</h1>
+                    <p>Teams around the world invent on behalf of our customers every day to meet their desire for lower prices,
+                       better selection, and convenient services. One way we guarantee a wide selection of products is through the 1.7 million
+                       small and medium businesses around the world selling on Amazon.com and offering more options for customers.
+                    </p>
+                </div>
+                <div class="box">
+                        <h1>AWS Cloud computing</h1>
+                    <p>Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud,
+                     offering over 200 fully featured services from data centers globally. Millions of customers—including 
+                     the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, 
+                     become more agile, and innovate faster.</p>
+                </div>
+                <div class="box">
+                        <h1>Amazon Entertainment</h1>
+                    <p>
+                        We create and provide access to world-class entertainment through Amazon Originals, Prime Video, Audible,
+                         Amazon Games, Twitch, Amazon Music, Prime Gaming, and more. Amazon’s digital entertainment products enable 
+                         customers to access the latest apps and games, stream or download movies, TV shows, and music, and gives 
+                         customers the ability to access their own files anywhere in the world.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding: 20px;" id="contact" class="contact">
+        <div class="content">
+            <div class="title"><span>Sign Up</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Name here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Password</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" 
+                            placeholder="Enter your Password here">
+                    </div>
+                    <div class="button">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <div class="rightside1">
+            <div class="title1">
+                <span>
+                    Contact Us
+                </span>
+            </div>
+            <div class="content1">
+                <p>11th Floor, Godrej One, Pirojshanagar, Vikhroli, Mumbai, Maharashtra 400079<br>
+                Email:admin@amazon.in<br></p>
+            </div>
+            <div class="title1"><a href="https://www.amazon.in/">Visit Us</a></div>
+        </div>
+    <footer>
+        <div class="footer">
+            <span>
+                © 1996-2024, Amazon.com, Inc. or its affiliates<br>Created By Jeet
+        </div>
+    </footer>
+</body>
+</html>
